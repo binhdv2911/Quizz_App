@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <style></style>
+  <body>
+    <!-- HTML code for displaying quiz and buttons -->
+    <div class="form">
+      <form id="quizForm">
+        <h1>Javascript Online Quiz</h1>
+
+        <div id="questionContainer"></div>
+        <div class="fm-btn">
+          <button type="button" id="prevBtn" onclick="prevQuestion()">
+            prevQuestion
+          </button>
+          <button type="button" id="nextBtn" onclick="nextQuestion()">
+            nextQuestion
+          </button>
+          <button type="button" id="submitBtn" onclick="submitQuiz()">
+            Submit Quiz
+          </button>
+        </div>
+      </form>
+      <h2></h2>
+      <div id="resultContainer"></div>
+    </div>
+
+    <script src="./data.js" defer></script>
+    <script src="./main.js" defer></script>
+  </body>
+</html>
